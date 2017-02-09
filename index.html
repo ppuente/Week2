@@ -12,72 +12,103 @@ margin:0 auto;
 
 body {
 color: black;
+background:white;
 font-weight:300;
 font-size:16px;
 line-height:22px;
 Font-family:"Open Sans","Helvetica Neue",Arial, sans-serif;
 }
     
-h1,h2,h3,h4{
+h1, h2{
  color: #45a2da;       
     }
-
-h2,h3,h4{
- font-size:14px;
+    
+    h2{
+font-size:14px;
 font-weight:400;
-text-transform:uppercase;
+text-transform:uppercase;  
     }
- a{
- color:black; 
+    
+header a{ 
 text-decoration:none;
     }
-    
-header a:hover{
-color: white;
-    }
-    
-footer a{
+       
+footer li a{
         color:white;
     }
     
- nav{
-   text-align:right;     
+    
+header li{
+     display:inline-block;   
+    }
+
+li a{
+    color:black;
     }
     
+header li:hover{
+        box-shadow:inset 0 3px 0 0 #45a2da;
+        color:#45a2da;
+    }
+ article p{
+     color:#848484;
+    }
+    
+aside{
+    color:#848484
+    }
+    
+footer{
+        background-color:black;
+        border-top:1px solid rgba (0.0, 0.0,.085);
+        box-shadow:inset 0 1px 0 rgba (255,255,255,0.8);
+    }
+    
+.alt-link{
+    background-color:black;
+    }
+    
+.alt-link a{
+    color:white;
+    }
+
 </style>
 
 </head>
 <body>
 
+<img src="logo.png">
 
-<header class="container">
-	<h1>Coding Temple</h1>
+    
 	
-	<nav>	
-		<a href="home.html"> Home</a></br>
-		<a href="courses.html">Courses</a></br>
-		<a href="students.html">Students</a></br>
-		<a href="apply.html">Apply Now</a></br>
-	</nav>
+	<ul>	
+        <li><a href="home.html"> Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+		<li><a href="students.html">Students</a></li>
+		<li class="alt-link"><a href="apply.html">Apply Now</a></li>
+	</ul>
 	
 </header>
 	<article>
 	
 	<section class="container">
-	<h1> Classes </h1>
+    <img src="classes.png" width="200">
+	<h2> Classes </h2>
 	<p>Coding Temple offers classes at our two campuses located in Schaumburg, and Chicago.  
 	Currently we offer full and part-time classes.  Our next classes start January 4th, 2016.</p>
 	<a href="apply.html">Start Your Application</a>
 	</section>
 	
 	<section class="container">
-	<h1>Course Curriculum</h1>
+        <img src="curriculum.png" width="200">
+	<h2>Course Curriculum</h2>
 	<p>Technologies covered: JavaScript, C#, ASP.NET MVC, Entity Framework, HTML/CSS, SQL, Git, and more! We will also teach you how to learn as our end goal is to make you adaptable to other similar technologies and future technologies.</p>
 	<a href="courses.html">View the Curriculum...</a>
 	</section>
 	
 	<section class="container">
-	<h1>Current Students</h1>
+        <img src="students.png" width="200">
+	<h2>Current Students</h2>
 	<p>Our current cohort consists of students from various backgrounds and knowledge about the IT industry.</p>
 	<a href="students.html">View More of our students</a>
 	</section>
@@ -86,14 +117,20 @@ footer a{
 		
 		
 	<footer class="container">
-		<h1>Coding Temple</h1>
 
-	<nav>
-		<a href="home.html"> Home</a></br>
-		<a href="courses.html">Courses</a></br>
-		<a href="students.html">Students</a></br>
-		<a href="apply.html">Apply Now</a></br>
-		</nav>
+	<ul>
+        <li><a href="home.html"> Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+		<li><a href="students.html">Students</a></li>
+		<li><a href="apply.html">Apply Now</a></li>
+    </ul>
+        
+<aside> 
+    <img src="logo_small.png">
+    <h3> 332 S. Michigan</h3>
+    <h3> 9th Floor</h3>
+    <h3>Chicago, IL 60604</h3>
+</aside>
 	</footer>
 	</div>
 </body>
